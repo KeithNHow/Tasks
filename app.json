@@ -1,0 +1,32 @@
+{
+  "id": "1ca79f3f-5ab2-487d-8a03-26c0d857f474",
+  "name": "Task Scheduling",
+  "publisher": "Keith How",
+  "version": "1.0.0.2",
+  "brief": "Task Scheduling",
+  "description": "Task Scheduling",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./logo/KNH.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 51920,
+      "to": 51929
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
