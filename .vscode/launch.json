@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "RemoteRecords",
+            "name": "Tasks",
             "request": "launch",
             "type": "al",
-            "environmentType": "Production",
-            "environmentName": "Production",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
             "startupObjectId": 2500,
             "startupObjectType": "Page",
             "breakOnError": "All",
