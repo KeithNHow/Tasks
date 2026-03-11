@@ -1,7 +1,10 @@
 /// <summary>
-/// Codeunit "KNH Company Test" (ID 51920).
+/// This codeunit is used to display information from the Company table, Company Information table and CDS Company table. 
+/// It will display the company name, display name, company id and url name of the current company. 
+/// It will display the company name and city from Company Information table.
+/// It will display the company name and company id from CDS Company table.
 /// </summary>
-codeunit 51920 "KNH_CompanyTest"
+codeunit 51920 KNHCompanyTest
 {
     TableNo = Company;
 

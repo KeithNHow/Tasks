@@ -1,8 +1,7 @@
 /// <summary>
-/// PageExtension "KNH Customer List" (ID 51920) extends Record Customer List.
-/// Hougaard - Tasks or job Queue
+/// This page extension is used to test the Task Scheduler and Session functionality. When the Customer List page is opened, it will create a task to run the Sales-Post codeunit at a specified time. 
 /// </summary>
-pageextension 51920 "KNH_CustomerList" extends "Customer List"
+pageextension 51920 KNHCustomerList extends "Customer List"
 {
     trigger OnOpenPage()
     var
@@ -13,7 +12,7 @@ pageextension 51920 "KNH_CustomerList" extends "Customer List"
         TaskId: Guid;
         TaskMsg: Label 'Task Created %1', Comment = '%1 = TaskId';
     begin
-        EarliestStartDateTime := CurrentDateTime() - 3600;
+        EarliestStartDateTime := CurrentDateTime() + 120;
         if TaskScheduler.CanCreateTask() then begin
             TaskId := TaskScheduler.CreateTask(codeunit::"Sales-Post", codeunit::"Job Queue Error Handler", true, CompanyName, EarliestStartDateTime, RecordId);
             Message(TaskMsg, TaskId);

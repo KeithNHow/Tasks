@@ -5,4 +5,6 @@ permissionset 51920 "KNH_Tasks"
 {
     Assignable = true;
     Caption = 'Tasks', MaxLength = 30;
+    Permissions = codeunit KNHCompanyTest = X,
+        codeunit KNHJobQueueJob = X;
 }

@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit KNH_JobQueue Job (ID 51921).
+/// This Codeunit is used to test the Job Queue Entry table. It will display a message when the codeunit is run from the Job Queue, and it will only display the message if the Job Queue Category Code is 'DO THIS' and the Object ID to Run is not 0. This allows for testing of the Job Queue functionality without having to set up a specific Job Queue Entry for this codeunit.
 /// </summary>
-codeunit 51921 "KNH_JobQueueJob"
+codeunit 51921 KNHJobQueueJob
 {
     TableNo = "Job Queue Entry";
 
